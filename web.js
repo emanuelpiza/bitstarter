@@ -6,7 +6,7 @@ var teste2 = 'lalala';
 
 var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
-  response.send(teste);
+  response.send(teste2);
 });
 
 var port = process.env.PORT || 5000;

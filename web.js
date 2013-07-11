@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var express = require('express');
 
 var buf = new Buffer(fs.readFileSync('/home/ubuntu/bitstarter/index.html'), 'utf-8');

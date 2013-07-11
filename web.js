@@ -1,10 +1,10 @@
 var buf = new Buffer(fs.readFileSync("/home/ubuntu/bitstarter/index.html"), "utf-8");
-
+var teste = buf.toString();
 var express = require('express');
 
 var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
-  response.send(buf.toString()); 
+  response.send(teste); 
 });
 
 var port = process.env.PORT || 5000;

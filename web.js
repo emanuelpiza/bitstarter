@@ -5,7 +5,7 @@ var buf = new Buffer(fs.readFileSync('/home/ubuntu/bitstarter/index.html'), "utf
 
 app.get('/', function(request, response) {
   response.send(buf.toString);
-};
+});
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {

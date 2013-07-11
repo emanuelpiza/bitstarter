@@ -1,6 +1,7 @@
-var buf = new Buffer(fs.readFileSync("/home/ubuntu/bitstarter/index.html"), "utf-8");
-
 var express = require('express');
+
+var buf = new Buffer(fs.readFileSync("/home/ubuntu/bitstarter/index.html"), "utf-8");
+var teste = buf.toString();
 
 var app = express.createServer(express.logger());
 app.get('/', function(request, response) {

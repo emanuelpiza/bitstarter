@@ -3,7 +3,7 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
-    var buf = new Buffer(fs.readFileSync('/home/ubuntu/bitstarter/index.html'), 'utf-8');
+    var buf = new Buffer(fs.readFileSync('./index.html'), 'utf-8');
     var teste = buf.toString();
     response.send("Buffer(fs.readFileSync('/home/ubuntu/bitstarter/index.html'), 'utf-8').toString()");
 });
